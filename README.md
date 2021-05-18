@@ -7,6 +7,7 @@ Edit from [chia-client](https://github.com/freddiecoleman/chia-client) by Freddi
 ### Configs for using testnet
 ```shell
 export CHIA_ROOT="~/.chia/[TEST_NET_FOLDER]"
+export CHIA_FOLDER_PATH=CHIA_FOLDER_PATH
 export CHIA_NET="testnet"
 ```
 

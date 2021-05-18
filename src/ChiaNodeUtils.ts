@@ -8,13 +8,16 @@ let chiaRootPath: string = "";
 
 export const getChiaRootPath = (): string => {
     if (chiaRootPath) return chiaRootPath;
+    const chiaFolderPath = process.env["CHIA_FOLDER_PATH"]
 
     if (process.env["CHIA_NET"] && process.env["CHIA_NET"].toLowerCase() === "testnet") {
-        chiaRootPath = process.env["CHIA_ROOT"] || ".chia/testnet7"
-    } else chiaRootPath = resolve(
-        homedir(),
-        process.env["CHIA_ROOT"] || ".chia/mainnet"
-    );
+        chiaRootPath = (chiaFolderPath ? chiaFolderPath : process.env["CHIA_ROOT"]) || ".chia/testnet7"
+    } else {
+        chiaRootPath = chiaFolderPath ? chiaFolderPath : resolve(
+            homedir(),
+            process.env["CHIA_ROOT"] || ".chia/mainnet"
+        );
+    }
 
     return chiaRootPath;
 };

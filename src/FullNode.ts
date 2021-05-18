@@ -18,7 +18,7 @@ import { address_to_puzzle_hash, puzzle_hash_to_address, get_coin_info } from "c
 
 const chiaConfig = getChiaConfig();
 const defaultProtocol = "https";
-const defaultHostname = chiaConfig?.self_hostname || "localhost";
+const defaultHostname = chiaConfig?.self_hostname || "0.0.0.0";
 const defaultPort = chiaConfig?.full_node.rpc_port || 8555;
 const defaultCaCertPath = chiaConfig?.private_ssl_ca.crt;
 const defaultCertPath = chiaConfig?.daemon_ssl.private_crt;

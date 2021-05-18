@@ -23,7 +23,7 @@ import { address_to_puzzle_hash, puzzle_hash_to_address, get_coin_info } from "c
 
 const chiaConfig = getChiaConfig();
 const defaultProtocol = "https";
-const defaultHostname = chiaConfig?.self_hostname || "localhost";
+const defaultHostname = chiaConfig?.self_hostname || "0.0.0.0";
 const defaultPort = chiaConfig?.wallet.rpc_port || 9256;
 const host = "https://backup.chia.net";
 

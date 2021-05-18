@@ -27,7 +27,7 @@ class RpcClient {
       ...(typeof options.caCertPath !== 'boolean' ? { ca: readFileSync(options.caCertPath) } : {}),
       cert: readFileSync(options.certPath),
       key: readFileSync(options.keyPath),
-      rejectUnauthorized: options.hostname !== "localhost",
+      rejectUnauthorized: options.hostname !== "0.0.0.0",
     });
   }
 
