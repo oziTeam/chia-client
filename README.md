@@ -2,6 +2,14 @@
 
 TypeScript client for communicating with [Chia](https://www.chia.net/) RPC interfaces. All API calls return promises.
 
+Edit from [chia-client](https://github.com/freddiecoleman/chia-client) by Freddie Coleman
+
+### Configs for using testnet
+```shell
+export CHIA_ROOT="~/.chia/[TEST_NET_FOLDER]"
+export CHIA_NET="testnet"
+```
+
 ### Full Node
 
 ```

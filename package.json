@@ -1,6 +1,6 @@
 {
-  "name": "chia-client",
-  "version": "9.4.0",
+  "name": "chia-client-with-configs",
+  "version": "0.0.2",
   "description": "TypeScript client for Chia node peer RPC interface",
   "main": "dist/index.js",
   "scripts": {
@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/freddiecoleman/chia-client"
+    "url": "git+https://github.com/oziTeam/chia-client.git"
   },
   "keywords": [
     "chia",
     "cryptocurrency"
   ],
-  "author": "Freddie Coleman",
+  "author": "OziTeam (edit from Freddie Coleman)",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^25.2.1",
@@ -47,5 +47,12 @@
         "isolatedModules": true
       }
     }
+  },
+  "bugs": {
+    "url": "https://github.com/oziTeam/chia-client/issues"
+  },
+  "homepage": "https://github.com/oziTeam/chia-client#readme",
+  "directories": {
+    "test": "test"
   }
 }
